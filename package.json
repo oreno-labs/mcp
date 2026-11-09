@@ -1,0 +1,48 @@
+{
+  "name": "oreno-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Oreno: tokenized-stock market data, screeners, backtests and AI strategy plans on Robinhood Chain, paid per call with x402",
+  "license": "MIT",
+  "author": "Oreno Labs",
+  "type": "module",
+  "bin": {
+    "oreno-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "oreno",
+    "x402",
+    "robinhood-chain",
+    "tokenized-stocks",
+    "backtest"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "viem": "^2.57.17",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oreno-labs/mcp.git"
+  },
+  "homepage": "https://github.com/oreno-labs/mcp#readme",
+  "bugs": {
+    "url": "https://github.com/oreno-labs/mcp/issues"
+  }
+}
